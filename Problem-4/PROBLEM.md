@@ -1,0 +1,1 @@
+You are given a JavaScript object representing a user's profile. Your task is to write a function that can update a specific piece of information (a property) within this user profile.
