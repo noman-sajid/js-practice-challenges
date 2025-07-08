@@ -1,0 +1,1 @@
+You are given an array of user objects, each with a name and age property. Your task is to understand how to efficiently find the first user who meets a specific age criterion.
