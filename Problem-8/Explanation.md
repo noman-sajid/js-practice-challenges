@@ -1,0 +1,5 @@
+We have a function sumArrayElements and we pass numebers as parameter inside that function we have a variable declared using const keyword and assign it calling reduce method on numbers in the callback we have a function takes accumulator and currentValue as parameters in the callbackfunction we rueturn adding the accumolator and the current valuse then as second argument of the reducer function we pass 0, and after that we return sum and the function ends
+
+we have a variable using const keyword and assign it and array of numbers after that we have totalsum variable declared using const keyword and we assign it call of sumArrayElements function passing dataPoints as argument then we log both of them
+
+key here is understanding what reduce method does it takes an initial value and adds it in the current value the result is what we know as accumulator then it takes accumulator and adds next value in it and this process goes on for each element of array and it returs us one number in case of strings it returns a sentance the output depends on the callback function it is not necessary it is only used to add the elements of array as one value

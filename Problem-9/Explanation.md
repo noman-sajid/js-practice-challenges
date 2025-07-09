@@ -1,0 +1,1 @@
+it takes the acc and word as parameters i and an empty string as initial value in the callback, we return a turnary operator  if the length of the word is greater than accumulator's length, if the condition is true, return the wor;d otherwise, return the accumulator in the callback, we have a condition which is returning a word and that if true word is now accumulator 
