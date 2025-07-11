@@ -1,0 +1,5 @@
+we have a function hasActiveUser and we pass users as perameter in the function we have a variable anyActive and assign it users chaning some method, some method takes a callback in the callback function we pass user as parameber in the fuciton we return if user.isActive property is strictly equal to true and then we return anyactive it will return a boolean, next we have an userDataase an array of objects with properties then we have and emptyDatabse array then we have all inactiveDatabase array with objects in it then we log userDatabse it will log all of the objects then we log call of the hasActiveUser function passing userDatabse as an argument it will return true because there are active users
+
+next we log empty databse then we log function call again this time pasing empty databse as arguement this will also return false cause there is nothing to test the condition against
+
+then we log allinActiveDatabase and next log we call the fuction passing this as an arguement this will also return false time complexity O(n) goes atlest once through every element
