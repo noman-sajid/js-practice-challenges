@@ -1,0 +1,5 @@
+we have a function getShallowCopy and we are passing a parameter originalArray in it inside the function we have a varaible copyArray it is assigned to an array inside that array way have spread operator and the orignal array then we return the copyArray
+
+then we create variable orignalScores and assign it an array the we create another variable assign it call of function passing orinalScore variale as an arguement basically differen cases potraying updating the shallow copy of the array using spread affect the orignal array and if orignal array contains objects those are gonna get copied as well because reference of the elements is copied
+
+and if we update the shallow copy it leavs no effect on the orignal array basically it target how spread operator works it creates shallow copy of an array
