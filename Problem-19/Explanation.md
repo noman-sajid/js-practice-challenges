@@ -1,0 +1,3 @@
+ok we have a function getObjectValues and we pass obj as a parameter in the function we have a variable valuesArray and we assignt it calling values method on Object and pass obj as a paramenter and then we return variable and then we have two varible assinge objects with propertis, and we have log statements
+
+basically the important thing to notice here is the value method i would call it close cousin of key method it get the values of properties of the objects
