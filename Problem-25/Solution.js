@@ -18,3 +18,18 @@ const nums = [3, 7, 2, 9, 5];
 const result = findMinMax(nums);
 console.log(result); 
 // ✅ { min: 2, max: 9 }
+
+
+
+// Modern Way to do it
+function findMinMax(numbers) {
+  const min = Math.min(...numbers);
+  const max = Math.max(...numbers);
+
+  return { min, max };
+}
+
+const nums = [3, 7, 2, 9, 5];
+const result = findMinMax(nums);
+console.log(result);
+// ✅ { min: 2, max: 9 }
