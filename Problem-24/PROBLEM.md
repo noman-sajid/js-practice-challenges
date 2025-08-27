@@ -1,0 +1,1 @@
+Imagine you need to find the Smallest number in a list of numbers. How would you solve that problem? Can you write the code for it
