@@ -1,0 +1,1 @@
+Write a function that takes an array of numbers and returns the average (sum of all numbers divided by how many there are).
