@@ -1,0 +1,1 @@
+Write a function longestWord that takes a string (a sentence) and returns the longest word in it.
