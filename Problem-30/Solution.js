@@ -99,3 +99,18 @@
 
 // console.log(topThree("Coding is super fun and challenging!"));
 // // ["challenging", "Coding", "super"]
+
+
+
+//Using Functions
+
+function topThree(sentence) {
+   return sentence.replace(/[^\w\s]/g, "")
+    .split(" ")
+    .sort((a, b)=>b.length - a.length)
+    .slice(0, 3);
+}
+
+
+const sentence = "Coding is super fun and challenging!";
+console.log(topThree(sentence)); 
