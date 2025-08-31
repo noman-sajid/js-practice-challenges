@@ -13,3 +13,8 @@ function firstUniqueChar(str) {
 
   return null;
 }
+
+
+firstUniqueChar("swiss")       // "w"
+firstUniqueChar("aabb")        // null
+firstUniqueChar("Hello World") // "h"
