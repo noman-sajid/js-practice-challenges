@@ -36,16 +36,38 @@
 
 //Using functions 
 
-function areAnagrams(str1, str2){
-    const cleanStr1 = str1.toLowerCase().replace(/[^\w]/g, "").split("").sort().join("");
-    const cleanStr2 = str2.toLowerCase().replace(/[^\w]/g, "").split("").sort().join("");
-    return cleanStr1 === cleanStr2;
+// function areAnagrams(str1, str2){
+//     const cleanStr1 = str1.toLowerCase().replace(/[^\w]/g, "").split("").sort().join("");
+//     const cleanStr2 = str2.toLowerCase().replace(/[^\w]/g, "").split("").sort().join("");
+//     return cleanStr1 === cleanStr2;
 
+// }
+
+
+// console.log(areAnagrams("listen", "silent")); // true
+// console.log(areAnagrams("rail safety", "fairy tales")); // true
+// console.log(areAnagrams("hello", "world")); // false
+
+// Cleaned Up Loops version
+function areAnagrams(str1, str2) {
+  const clean = str => str.toLowerCase().replace(/[^\w]/g, "");
+
+  const s1 = clean(str1);
+  const s2 = clean(str2);
+
+  if (s1.length !== s2.length) return false;
+
+  const freq1 = {}, freq2 = {};
+
+  for (const char of s1) freq1[char] = (freq1[char] || 0) + 1;
+  for (const char of s2) freq2[char] = (freq2[char] || 0) + 1;
+
+  for (const char in freq1) {
+    if (freq1[char] !== freq2[char]) return false;
+  }
+
+  return true;
 }
 
-
-
-
 console.log(areAnagrams("listen", "silent")); // true
-console.log(areAnagrams("rail safety", "fairy tales")); // true
-console.log(areAnagrams("hello", "world")); // false
+console.log(areAnagrams("hello", "bello"));  // false
