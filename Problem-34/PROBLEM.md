@@ -1,0 +1,1 @@
+Write a function called isEvenOrOdd that takes one number as an argument. The function should return the string "Even" if the number is even and "Odd" if it's odd.
