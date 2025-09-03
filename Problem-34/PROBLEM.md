@@ -7,3 +7,15 @@ Create a function called findLargestNumber that takes an array of numbers as an 
 
 
 Write a function named reverseString that takes a string as an argument and returns the string reversed.
+
+
+
+This is a classic coding challenge. Write a function called fizzBuzz that takes one number as an argument. The function should iterate from 1 up to the given number. For each number in the iteration:
+
+If the number is divisible by 3, print "Fizz".
+
+If the number is divisible by 5, print "Buzz".
+
+If the number is divisible by both 3 and 5, print "FizzBuzz".
+
+If it's none of the above, print the number itself.
