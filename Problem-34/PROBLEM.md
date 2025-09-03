@@ -19,3 +19,14 @@ If the number is divisible by 5, print "Buzz".
 If the number is divisible by both 3 and 5, print "FizzBuzz".
 
 If it's none of the above, print the number itself.
+
+
+
+
+
+Write a function named countVowels that takes a string as an argument. The function should return the total count of vowels (a, e, i, o, u) in the string. The function should be case-insensitive.
+
+Example:
+countVowels("hello") should return 2
+
+countVowels("JavaScript") should return 3
