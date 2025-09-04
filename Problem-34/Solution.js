@@ -50,12 +50,28 @@
 
 
 
-function countVowels(str){
-    let count = 0; 
-    const vowels = "aeiouAEIOU";
-    for(let char of str){
-        if(vowels.includes(char)){
-            count++;
-        }
+// function countVowels(str){
+//     let count = 0; 
+//     const vowels = "aeiouAEIOU";
+//     for(let char of str){
+//         if(vowels.includes(char)){
+//             count++;
+//         }
+//     }
+// }
+
+
+
+
+function removeDuplicates(arr) {
+  let uniqueArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!uniqueArr.includes(arr[i])) {
+      uniqueArr.push(arr[i]);
     }
+  }
+  return uniqueArr;
 }
+
+const arr = [1, 2, 2, 3, 4, 4, 5];
+console.log(removeDuplicates(arr)); // Expected output: [1, 2, 3, 4, 5]

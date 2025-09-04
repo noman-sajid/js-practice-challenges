@@ -30,3 +30,22 @@ Example:
 countVowels("hello") should return 2
 
 countVowels("JavaScript") should return 3
+
+
+
+
+
+
+Write a function called removeDuplicates that takes an array of numbers or strings as an argument. The function should return a new array with all duplicate elements removed. You should not use a built-in Set object.
+
+Example:
+removeDuplicates([1, 2, 2, 3, 4, 4, 5]) should return [1, 2, 3, 4, 5]
+
+removeDuplicates(["a", "b", "a", "c", "d", "c"]) should return ["a", "b", "c", "d"]
+
+
+
+
+
+
+
