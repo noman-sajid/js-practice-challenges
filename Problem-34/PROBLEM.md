@@ -47,5 +47,14 @@ removeDuplicates(["a", "b", "a", "c", "d", "c"]) should return ["a", "b", "c", "
 
 
 
+Problem 4: Find the Smallest Number in an Array
+Similar to the "find the largest number" problem, write a function called findSmallestNumber that takes an array of numbers as an argument. The function should find and return the smallest number in the array. You should not use built-in Math functions like Math.min().
+
+Example:
+findSmallestNumber([2, 5, 1, 9, 3]) should return 1
+
+findSmallestNumber([100, 50, 25]) should return 25
+
+
 
 

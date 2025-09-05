@@ -80,9 +80,24 @@
 
 
 
-function removeDuplicatesWithSet(arr) {
-  return [...new Set(arr)];
+// function removeDuplicatesWithSet(arr) {
+//   return [...new Set(arr)];
+// }
+
+// const arr = [1, 2, 2, 3, 4, 4, 5];
+// console.log(removeDuplicatesWithSet(arr));
+
+
+
+function findSmallestNumber(nums){
+     
+     let SmallestNum = nums[0];
+     for(num of nums){
+          if(num < SmallestNum){
+               SmallestNum = num;
+          }
+     } 
+     return SmallestNum;
 }
 
-const arr = [1, 2, 2, 3, 4, 4, 5];
-console.log(removeDuplicatesWithSet(arr));
+console.log(findSmallestNumber([2, 5, 1, 9, 3]))
