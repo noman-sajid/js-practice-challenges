@@ -58,3 +58,14 @@ findSmallestNumber([100, 50, 25]) should return 25
 
 
 
+🔹 Problem 5: Check if a Number is Prime
+
+Write a function that checks if a number is prime.
+
+// Example:
+isPrime(7); // true
+isPrime(10); // false
+
+
+
+

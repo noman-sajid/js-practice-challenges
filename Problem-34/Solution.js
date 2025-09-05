@@ -89,15 +89,38 @@
 
 
 
-function findSmallestNumber(nums){
+// function findSmallestNumber(nums){
      
-     let SmallestNum = nums[0];
-     for(num of nums){
-          if(num < SmallestNum){
-               SmallestNum = num;
-          }
-     } 
-     return SmallestNum;
+//      let SmallestNum = nums[0];
+//      for(num of nums){
+//           if(num < SmallestNum){
+//                SmallestNum = num;
+//           }
+//      } 
+//      return SmallestNum;
+// }
+
+// console.log(findSmallestNumber([2, 5, 1, 9, 3]))
+
+
+
+function isPrime(num) {
+  // Prime numbers must be greater than 1
+  if (num <= 1) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
 }
 
-console.log(findSmallestNumber([2, 5, 1, 9, 3]))
+// Example usage:
+console.log(isPrime(7));  // true
+console.log(isPrime(10)); // false
+console.log(isPrime(29)); // true
+console.log(isPrime(1));  // false
