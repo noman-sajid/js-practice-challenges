@@ -129,20 +129,44 @@
 
 
 
-function factorial(n){
-  if(n === 0 || n === 1){
-    return 1;
-  } else if(n < 0){
-    return "Undefined for negative numbers";
-  } else {
-    let result = 1;
-    for(let i = 2; i <= n; i++){
-      result *= i;
-    }
-    return result;}
+// function factorial(n){
+//   if(n === 0 || n === 1){
+//     return 1;
+//   } else if(n < 0){
+//     return "Undefined for negative numbers";
+//   } else {
+//     let result = 1;
+//     for(let i = 2; i <= n; i++){
+//       result *= i;
+//     }
+//     return result;}
+// }
+
+
+// console.log(factorial(5)) // 120
+// console.log(factorial(0)) // 1
+// console.log(factorial(-3)) // "Undefined for negative numbers"
+
+
+
+
+
+function isMissing(nums){
+   let missing = ''
+   if (nums.length === 0 || nums.length === 1) {
+    return "Not enough numbers to find a missing one.";
+  }
+   for(let i =1 ; i < nums.length -1 ; i++){
+         if (nums[i+1] - nums[i] !== 1) {
+              return nums[i] + 1;
+         }
+   }
+    return "No missing number found.";
+
 }
 
 
-console.log(factorial(5)) // 120
-console.log(factorial(0)) // 1
-console.log(factorial(-3)) // "Undefined for negative numbers"
+
+console.log(isMissing([1, 2, 4, 5])); // Output: 3
+console.log(isMissing([10, 11, 12, 14])); // Output: 13
+console.log(isMissing([1, 2, 3, 4])); // Output: "No missing number found."

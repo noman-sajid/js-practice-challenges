@@ -70,11 +70,16 @@ isPrime(10); // false
 
 
 
-
-
 Write a function to calculate the factorial of a number using a loop.
 
 // Example:
 factorial(5); // 120
+
+
+
+You are given an array of numbers from 1 to n, but one number is missing. Find it.
+
+// Example:
+findMissing([1, 2, 4, 5]); // 3
 
 
