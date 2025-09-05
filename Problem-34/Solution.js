@@ -104,23 +104,45 @@
 
 
 
-function isPrime(num) {
-  // Prime numbers must be greater than 1
-  if (num <= 1) {
-    return false;
-  }
+// function isPrime(num) {
+//   // Prime numbers must be greater than 1
+//   if (num <= 1) {
+//     return false;
+//   }
 
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) {
-      return false;
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// // Example usage:
+// console.log(isPrime(7));  // true
+// console.log(isPrime(10)); // false
+// console.log(isPrime(29)); // true
+// console.log(isPrime(1));  // false
+
+
+
+
+
+function factorial(n){
+  if(n === 0 || n === 1){
+    return 1;
+  } else if(n < 0){
+    return "Undefined for negative numbers";
+  } else {
+    let result = 1;
+    for(let i = 2; i <= n; i++){
+      result *= i;
     }
-  }
-
-  return true;
+    return result;}
 }
 
-// Example usage:
-console.log(isPrime(7));  // true
-console.log(isPrime(10)); // false
-console.log(isPrime(29)); // true
-console.log(isPrime(1));  // false
+
+console.log(factorial(5)) // 120
+console.log(factorial(0)) // 1
+console.log(factorial(-3)) // "Undefined for negative numbers"

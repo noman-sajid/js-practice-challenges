@@ -69,3 +69,12 @@ isPrime(10); // false
 
 
 
+
+
+
+Write a function to calculate the factorial of a number using a loop.
+
+// Example:
+factorial(5); // 120
+
+
