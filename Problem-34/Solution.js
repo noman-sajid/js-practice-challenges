@@ -151,22 +151,38 @@
 
 
 
-function isMissing(nums){
-   let missing = ''
-   if (nums.length === 0 || nums.length === 1) {
-    return "Not enough numbers to find a missing one.";
-  }
-   for(let i =1 ; i < nums.length -1 ; i++){
-         if (nums[i+1] - nums[i] !== 1) {
-              return nums[i] + 1;
-         }
+// function isMissing(nums){
+//    let missing = ''
+//    if (nums.length === 0 || nums.length === 1) {
+//     return "Not enough numbers to find a missing one.";
+//   }
+//    for(let i =1 ; i < nums.length -1 ; i++){
+//          if (nums[i+1] - nums[i] !== 1) {
+//               return nums[i] + 1;
+//          }
+//    }
+//     return "No missing number found.";
+
+// }
+
+
+
+// console.log(isMissing([1, 2, 4, 5])); // Output: 3
+// console.log(isMissing([10, 11, 12, 14])); // Output: 13
+// console.log(isMissing([1, 2, 3, 4])); // Output: "No missing number found."
+
+
+
+function isPalindrome(str){
+   let reversed = '';
+   for(let i = str.length - 1; i >= 0; i--){
+      reversed += str[i]
+
    }
-    return "No missing number found.";
+ 
+   if(reversed === str){
+      return true;
+   }
+ return false;
 
 }
-
-
-
-console.log(isMissing([1, 2, 4, 5])); // Output: 3
-console.log(isMissing([10, 11, 12, 14])); // Output: 13
-console.log(isMissing([1, 2, 3, 4])); // Output: "No missing number found."

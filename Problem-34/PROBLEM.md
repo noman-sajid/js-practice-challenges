@@ -83,3 +83,14 @@ You are given an array of numbers from 1 to n, but one number is missing. Find i
 findMissing([1, 2, 4, 5]); // 3
 
 
+
+
+🔹 Problem 12: Palindrome Checker
+
+Write a function that checks if a string is the same when reversed.
+
+// Example:
+isPalindrome("racecar"); // true
+isPalindrome("hello");   // false
+
+
