@@ -34,7 +34,7 @@
 
 // function fizzBuzz(n){
 //     let result = [];
-//     for(let i = 0; i < n; i++){
+//     for(let i = 1; i < n; i++){
 //         if(i % 3 === 0 && i % 5 === 0){
 //             result.push("FizzBuzz");
 //         }   else if(i % 3 === 0){  
@@ -173,15 +173,47 @@
 
 
 
-function isPalindrome(str){
-      const reversed = str.split('').reverse().join('');
-      if(reversed === str){
-            return true;
-      }
+// function isPalindrome(str){
+//       const reversed = str.split('').reverse().join('');
+//       if(reversed === str){
+//             return true;
+//       }
       
-      return false;
+//       return false;
 
+// }
+
+// console.log(isPalindrome("racecar"))      
+// console.log(isPalindrome("hello"))   
+
+
+
+
+function compressStr(str) {
+
+  let compressedList = [];
+  let count = 1;
+
+  if (str.length === 0) {
+    return "";
+  }
+
+  for (let i = 1; i <= str.length; i++) {
+    if (str[i] === str[i - 1]) {
+      count++;
+    } else {
+      compressedList.push(str[i - 1]);
+      compressedList.push(count);
+      
+      count = 1;
+    }
+  }
+
+  let compressedStr = compressedList.join("");
+
+  return compressedStr.length < str.length ? compressedStr : str;
 }
 
-console.log(isPalindrome("racecar"))      
-console.log(isPalindrome("hello"))   
+// Example Usage:
+console.log(compressStr("aabcccccaaa")); // Output: a2b1c5a3
+console.log(compressStr("abcdefg"));     // Output: abcdefg

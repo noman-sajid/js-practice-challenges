@@ -94,3 +94,14 @@ isPalindrome("racecar"); // true
 isPalindrome("hello");   // false
 
 
+
+
+🔹 Problem 14: Medium – String Compression
+
+Task:
+Implement a function that compresses a string by replacing consecutive repeating characters with the character followed by the count. If the compressed string is not shorter, return the original.
+
+Example:
+
+Input: "aabcccccaaa"
+Output: "a2b1c5a3"
