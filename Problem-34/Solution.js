@@ -189,31 +189,58 @@
 
 
 
-function compressStr(str) {
+// function compressStr(str) {
 
-  let compressedList = [];
-  let count = 1;
+//   let compressedList = [];
+//   let count = 1;
 
-  if (str.length === 0) {
-    return "";
-  }
+//   if (str.length === 0) {
+//     return "";
+//   }
 
-  for (let i = 1; i <= str.length; i++) {
-    if (str[i] === str[i - 1]) {
-      count++;
-    } else {
-      compressedList.push(str[i - 1]);
-      compressedList.push(count);
+//   for (let i = 1; i <= str.length; i++) {
+//     if (str[i] === str[i - 1]) {
+//       count++;
+//     } else {
+//       compressedList.push(str[i - 1]);
+//       compressedList.push(count);
       
-      count = 1;
+//       count = 1;
+//     }
+//   }
+
+//   let compressedStr = compressedList.join("");
+
+//   return compressedStr.length < str.length ? compressedStr : str;
+// }
+
+// // Example Usage:
+// console.log(compressStr("aabcccccaaa")); // Output: a2b1c5a3
+// console.log(compressStr("abcdefg"));     // Output: abcdefg
+
+
+
+
+
+function twoSumPairs(nums, target) {
+  const seen = new Set();
+  const pairs = new Set();
+
+  for (let num of nums) {
+    let complement = target - num;
+
+    if (seen.has(complement)) {
+   
+      const pair = [Math.min(num, complement), Math.max(num, complement)];
+      pairs.add(JSON.stringify(pair)); 
     }
+    seen.add(num);
   }
 
-  let compressedStr = compressedList.join("");
 
-  return compressedStr.length < str.length ? compressedStr : str;
+  return Array.from(pairs).map(pair => JSON.parse(pair));
 }
 
-// Example Usage:
-console.log(compressStr("aabcccccaaa")); // Output: a2b1c5a3
-console.log(compressStr("abcdefg"));     // Output: abcdefg
+
+console.log(twoSumPairs([2, 4, 3, 7, 5, -1], 6));
+// Output: [[2,4],[7,-1]]

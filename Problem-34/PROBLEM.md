@@ -105,3 +105,16 @@ Example:
 
 Input: "aabcccccaaa"
 Output: "a2b1c5a3"
+
+
+
+
+🔹 Problem 15: Harder – Two Sum Variant
+
+Task:
+You’re given an array of integers and a target sum. Return all unique pairs of numbers that add up to the target.
+
+Example:
+
+Input: [2, 4, 3, 7, 5, -1], target = 6
+Output: [[2, 4], [7, -1]]
