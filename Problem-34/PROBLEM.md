@@ -145,3 +145,12 @@ Array Rotation
 Rotate an array by k steps to the right.
 Example:
 [1, 2, 3, 4, 5], k = 2 → [4, 5, 1, 2, 3]
+
+
+
+
+1. Product of Array Except Self
+
+Write a function that takes an array of numbers and returns a new array where each element is the product of all other elements except itself, without using division.
+Example:
+[1, 2, 3, 4] → [24, 12, 8, 6]
