@@ -109,7 +109,7 @@ Output: "a2b1c5a3"
 
 
 
-🔹 Problem 15: Harder – Two Sum Variant
+Problem 15: Harder – Two Sum Variant
 
 Task:
 You’re given an array of integers and a target sum. Return all unique pairs of numbers that add up to the target.
@@ -118,3 +118,30 @@ Example:
 
 Input: [2, 4, 3, 7, 5, -1], target = 6
 Output: [[2, 4], [7, -1]]
+
+
+
+🔹 Problem: Longest Substring Without Repeating Characters
+
+Level: Medium
+Description:
+Write a function that takes a string and returns the length of the longest substring without repeating characters.
+
+Example:
+
+Input: "abcabcbb"
+Output: 3   // "abc"
+
+Input: "bbbbb"
+Output: 1   // "b"
+
+Input: "pwwkew"
+Output: 3   // "wke"
+
+
+
+
+Array Rotation
+Rotate an array by k steps to the right.
+Example:
+[1, 2, 3, 4, 5], k = 2 → [4, 5, 1, 2, 3]

@@ -4,7 +4,7 @@
 //     } else {
 //         return "Odd"
 //     }
-  
+
 // }
 
 // console.log(isEvenOrOdd(4)) // "Even"
@@ -90,7 +90,7 @@
 
 
 // function findSmallestNumber(nums){
-     
+
 //      let SmallestNum = nums[0];
 //      for(num of nums){
 //           if(num < SmallestNum){
@@ -178,7 +178,7 @@
 //       if(reversed === str){
 //             return true;
 //       }
-      
+
 //       return false;
 
 // }
@@ -204,7 +204,7 @@
 //     } else {
 //       compressedList.push(str[i - 1]);
 //       compressedList.push(count);
-      
+
 //       count = 1;
 //     }
 //   }
@@ -222,25 +222,72 @@
 
 
 
-function twoSumPairs(nums, target) {
-  const seen = new Set();
-  const pairs = new Set();
+// function twoSumPairs(nums, target) {
+//   const seen = new Set();
+//   const pairs = new Set();
 
-  for (let num of nums) {
-    let complement = target - num;
+//   for (let num of nums) {
+//     let complement = target - num;
 
-    if (seen.has(complement)) {
-   
-      const pair = [Math.min(num, complement), Math.max(num, complement)];
-      pairs.add(JSON.stringify(pair)); 
+//     if (seen.has(complement)) {
+
+//       const pair = [Math.min(num, complement), Math.max(num, complement)];
+//       pairs.add(JSON.stringify(pair)); 
+//     }
+//     seen.add(num);
+//   }
+
+
+//   return Array.from(pairs).map(pair => JSON.parse(pair));
+// }
+
+
+// console.log(twoSumPairs([2, 4, 3, 7, 5, -1], 6));
+// // Output: [[2,4],[7,-1]]
+
+
+
+
+
+
+function findLongestSubString(str) {
+  const charSet = new Set();
+  let left = 0;
+
+  let maxLength = 0;
+
+  for (let right = 0; right < str.length; right++) {
+    const char = str[right];
+
+    while (charSet.has(char)) {
+      charSet.delete(str[left]);
+      left++;
     }
-    seen.add(num);
+
+    charSet.add(char);
+
+    maxLength = Math.max(maxLength, right - left + 1);
   }
 
-
-  return Array.from(pairs).map(pair => JSON.parse(pair));
+  return maxLength;
 }
 
 
-console.log(twoSumPairs([2, 4, 3, 7, 5, -1], 6));
-// Output: [[2,4],[7,-1]]
+
+const rotateBruteForce = (nums, k) => {
+  const n = nums.length;
+ 
+  k = k % n; 
+
+  for (let i = 0; i < k; i++) {
+    const lastElement = nums[n - 1];
+    for (let j = n - 1; j > 0; j--) {
+      nums[j] = nums[j - 1]; 
+    }
+    nums[0] = lastElement;
+  }
+  return nums;
+};
+
+const arr1 = [1, 2, 3, 4, 5];
+console.log(rotateBruteForce(arr1, 2)); // Output: [4, 5, 1, 2, 3]
