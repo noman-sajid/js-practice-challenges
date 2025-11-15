@@ -335,17 +335,39 @@ function checkAge(){
 checkAge()
 
 
-function secondLargest(arr){
+// function secondLargest(arr){
    
-    let secondlar = 1;
-    const ascending = arr.sort((a, b)=> a - b)
-    const n = ascending.length;
-    console.log(n)
-    console.log(ascending)
-   const lastElement = ascending[n - 2]
-    console.log(lastElement)
+//     let secondlar = 1;
+//     const ascending = arr.sort((a, b)=> a - b)
+//     const n = ascending.length;
+//     console.log(n)
+//     console.log(ascending)
+//    const lastElement = ascending[n - 2]
+//     console.log(lastElement)
      
+// }
+
+// console.log(secondLargest([1,5,3,2,4,10,48,49]))
+
+
+function secondLargest(arr){
+    let largest = arr[0];
+    let secLar = 1;
+    for(let i = 0; i < arr.length; i++ ){
+        if(arr[i] > largest){
+           largest = arr[i]
+        }
+    }
+    for(let i = 0; i < arr.length; i++){
+          if(arr[i] < largest && arr[i] > arr[i - 1]){
+            secLar = arr[i]
+        }
+    }
+    
+    return secLar;
+
 }
 
-console.log(secondLargest([1,5,3,2,4,10,48,49]))
+console.log(secondLargest([1,5,3,2,4,10,48,49,111]))
+
 
