@@ -371,3 +371,32 @@ function secondLargest(arr){
 console.log(secondLargest([1,5,3,2,4,10,48,49,111]))
 
 
+
+function secondLargest(arr){
+   if (arr.length < 2) {
+        return "Array must have at least two elements.";
+    }
+   let largest; 
+   let secLar;
+    if(arr[0] < arr[1]){
+       largest = arr[1];
+       secLar = arr[0];
+    } else if(arr[0]> arr[1]){
+     largest = arr[0];
+     secLar = arr[1]
+    }
+
+    for(let i = 2; i < arr.length; i++){
+     let current = arr[i]
+     if(current > largest){
+      secLar = largest;
+      largest = current;
+     } else if(current > secLar && current < largest){
+        secLar = current;
+     }
+     
+    }
+    return secLar;
+}
+
+console.log(secondLargest([1,5,3,2,4,10,48,49,111]))
