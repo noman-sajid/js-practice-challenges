@@ -314,3 +314,38 @@ function productExceptSelf(nums) {
 
 const nums = [1, 2, 3, 4];
 console.log(productExceptSelf(nums)); // Output: [24, 12, 8, 6]
+
+
+
+
+
+function checkAge(){
+  let age = parseInt(prompt("Enter Your Age:"))
+  if(age < 18 && age <= 10){
+    alert("You are too young to drive") 
+    confirm("Do you want to see the prompt again")
+  } else if(age < 18 && age > 10){
+    alert("You are not allowed to drive, don't worry Comeback in a few years")
+     confirm("Do you want to see the prompt again")
+  } else if(age >= 18){
+  alert("Congratulations You can drive")
+     confirm("Do you want to see the prompt again")
+  }
+}
+checkAge()
+
+
+function secondLargest(arr){
+   
+    let secondlar = 1;
+    const ascending = arr.sort((a, b)=> a - b)
+    const n = ascending.length;
+    console.log(n)
+    console.log(ascending)
+   const lastElement = ascending[n - 2]
+    console.log(lastElement)
+     
+}
+
+console.log(secondLargest([1,5,3,2,4,10,48,49]))
+
