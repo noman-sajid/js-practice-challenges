@@ -7,3 +7,16 @@ for(let i = 1; i <= 10; i++){
       
 }
 console.log(sum)
+
+
+// Calculate 10! 
+
+
+let factorial = 1;
+
+for(let i = 1; i <= 10; i++){
+
+    factorial *= i
+    
+}
+console.log(factorial)
