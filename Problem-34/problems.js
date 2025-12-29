@@ -27,10 +27,33 @@ console.log(factorial)
 
 
 
+// let sum = 0;
+// for(let i = 11; i <= 30; i += 2){
+//    sum += i;
+// }
+
+// console.log(sum)
+
+
+
+//Create a function that receives an 
+// array of numbers and returns an 
+// array containing only the positive 
+// numbers.
+//  Requirement: Use a “for” loop
+
+let givenArray =  [1, 3, -9, 15, -90];
+
 let sum = 0;
-for(let i = 11; i <= 30; i += 2){
-   sum += i;
+function filtNeg(arr){
+    let positiveArr = []
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] > 0){
+          positiveArr.push(arr[i])
+        }
+    }
+    return positiveArr;
 }
 
-console.log(sum)
+console.log(filtNeg(givenArray))
 
